@@ -1,0 +1,23 @@
+$red-primary-color: rgb(207, 40, 40);
+$red-light-color: rgb(236, 82, 82);
+$middle-red: #b33030;
+$dark-primary-color: #282828;
+$light-primary-color: rgb(241, 241, 241);
+$grey: rgb(245, 245, 245);
+$border-radius: 50px;
+$slight-border-radius: 20px;
+
+@mixin flex-center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin btn($background) {
+	@include flex-center();
+	border-radius: $border-radius;
+	background: $background;
+	padding: 7.5px 10px;
+	width: 100px;
+	height: 40px;
+}

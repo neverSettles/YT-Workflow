@@ -1,0 +1,118 @@
+@import "variables";
+
+.workflowsContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	.dashboardMenuContainer {
+		width: 350px;
+		height: 100%;
+
+		@media screen and (max-width: 420px) {
+			width: 0;
+		}
+	}
+
+	.workflowsBody {
+		width: calc(100% - 350px);
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		overflow-x: hidden;
+
+		.numWorkflows {
+			align-self: flex-start;
+			width: 200px;
+			margin: 30px 0 10px 70px;
+			box-sizing: border-box;
+		}
+
+		.noWorkflows {
+			width: 60%;
+			border: 2px solid black;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		.filter {
+			align-self: flex-start;
+			list-style: none;
+			margin-left: 70px;
+			margin-bottom: 10px;
+			display: flex;
+
+			li {
+				padding: 5px 15px;
+				border: darken($grey, 50) 1px solid;
+				color: darken($grey, 50);
+				border-radius: $slight-border-radius;
+				margin: 0 5px;
+				cursor: pointer;
+
+				&:nth-child(1) {
+					margin-left: 0;
+				}
+
+				&:hover {
+					background: $red-primary-color;
+					border-color: $red-primary-color;
+					color: white;
+				}
+			}
+
+			.clear {
+				font-size: 80%;
+				border: none;
+				&:hover {
+					background: none;
+					color: inherit;
+				}
+			}
+
+			.active {
+				background: $red-primary-color;
+				border-color: $red-primary-color;
+				color: white;
+			}
+		}
+
+		.workflowList {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			margin-left: 70px;
+		}
+
+		.addWorkflowBtn {
+			background: $red-primary-color;
+			width: 150px;
+			padding: 10px;
+			@include flex-center();
+			color: $light-primary-color;
+			cursor: pointer;
+			border-radius: $border-radius;
+			margin-bottom: 20px;
+		}
+
+		@media screen and (max-width: 420px) {
+			width: 100%;
+			flex-direction: column;
+
+			.filter,
+			.numWorkflows {
+				margin-left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.workflowList {
+				margin-left: 0;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}

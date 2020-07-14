@@ -1,0 +1,69 @@
+@import "variables";
+
+@mixin iconColor($background) {
+	background: $background;
+	@if $background == $red-primary-color {
+		color: white;
+	}
+}
+
+.menuItemLink {
+	color: black;
+
+	.menuItemContainer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		width: 300px;
+		height: 70px;
+		margin: 5px 0;
+		padding: 0 5px;
+		padding-right: 20px;
+		transition: all 0.2s;
+		border-radius: $slight-border-radius;
+		cursor: pointer;
+
+		&:hover {
+			background: darken($grey, 20);
+		}
+
+		.menuItemInfo {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			margin-left: 10px;
+
+			.iconContainer {
+				width: 40px;
+				height: 40px;
+				border-radius: 10px;
+				@include flex-center();
+				@include iconColor(darken($grey,10));
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+
+			.iconContainerActive {
+				@include iconColor($red-primary-color);
+			}
+
+			.menuTitle {
+				font-weight: normal;
+				margin-left: 10px;
+			}
+		}
+
+		.activeCircle {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+
+		.active {
+			background-color: $red-primary-color;
+		}
+	}
+}

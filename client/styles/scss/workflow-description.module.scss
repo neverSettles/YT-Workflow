@@ -1,0 +1,43 @@
+@import "variables";
+
+$description-container-width: 350px;
+
+.descriptionContainer {
+	width: $description-container-width;
+
+	.descriptionTitle {
+		margin: 0;
+		padding: 0;
+	}
+
+	.description {
+		border-radius: $slight-border-radius;
+		width: 100%;
+		height: 350px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		outline: none;
+		padding: 5px $slight-border-radius;
+		box-sizing: border-box;
+		margin: 0;
+		font-size: 15px;
+		resize: none;
+	}
+
+	.updateIcon {
+		background: darken($grey, 20);
+		border-radius: 100%;
+		padding: 5px;
+		box-sizing: content-box;
+		color: white;
+		transform: translateX($description-container-width - 40px) translateY(-40px);
+		cursor: pointer;
+		pointer-events: none;
+	}
+
+	.descriptionChanged {
+		background: $red-primary-color;
+		pointer-events: fill;
+	}
+}

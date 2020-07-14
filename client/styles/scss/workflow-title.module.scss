@@ -1,0 +1,39 @@
+@import "variables";
+
+.titleInput {
+	min-width: 30px;
+	max-width: 50vw;
+	box-sizing: content-box;
+	padding: 3px 10px;
+	padding-bottom: 6px;
+	outline: none;
+	border: none;
+	height: 35px;
+	font-size: 30px;
+	border: rgba(0, 0, 0, 0) 2px solid;
+	border-radius: 2px;
+	font-weight: 800;
+
+	@media screen and (max-width: 420px) {
+		max-width: 40vw;
+		margin-left: 8vw;
+	}
+
+	white-space: nowrap;
+	overflow: hidden;
+	br {
+		display: none;
+	}
+	* {
+		display: inline;
+		white-space: nowrap;
+	}
+
+	&:hover {
+		border-color: lighten(rgba(0, 0, 0, 0.212), 50);
+	}
+
+	&:focus {
+		border-color: $red-primary-color;
+	}
+}

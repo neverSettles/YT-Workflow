@@ -1,0 +1,6 @@
+.idea
+.vscode
+client/node_modules
+django_backend/.vscode
+django_backend/db.sqlite3
+django_backend/yt_workflow_django/.env

@@ -1,0 +1,159 @@
+@import 'variables';
+
+.landingPageContent {
+	display: flex;
+	flex-direction: column;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		border-radius: $border-radius;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: rgb(202, 202, 202);
+		border-radius: $border-radius;
+		transition: 0.2s all;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: #acacac;
+	}
+	* {
+		box-sizing: border-box;
+	}
+	.content {
+		display: flex;
+		@include flex-center();
+		margin-top: 90px;
+
+		@media screen and (max-width: 770px) {
+			margin-top: 10px;
+		}
+		.text {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			align-items: center;
+
+			h1,
+			h3 {
+				width: 60%;
+			}
+
+			h1 {
+				font-size: 50px;
+				font-weight: 700;
+			}
+
+			h3 {
+				font-size: 25px;
+				font-weight: 300;
+			}
+		}
+
+		.img {
+			width: 45%;
+			padding: 20px;
+			display: flex;
+			@include flex-center();
+			// margin-top: 20px;
+			position: relative;
+			transform: translateY(50px);
+			img {
+				object-fit: cover;
+				width: 100%;
+			}
+			h2 {
+				font-size: 35px;
+				color: lightgrey;
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	.highlights {
+		display: flex;
+		width: 100%;
+		margin-top: 45px;
+		padding-top: 45px;
+		height: 500px;
+		border-radius: 20px;
+
+		.highlight {
+			width: 30%;
+			color: black;
+
+			margin: 0 1%;
+			height: 300px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			@include flex-center();
+			img {
+				transform: scale(0.8);
+			}
+			h2 {
+				width: 70%;
+				font-weight: 400;
+			}
+		}
+	}
+	@media screen and (max-width: 770px) {
+		span {
+			position: sticky;
+			top: 0;
+			left: 0;
+			background: white;
+			z-index: 3;
+			width: 100%;
+		}
+
+		.content {
+			flex-direction: column;
+
+			.img {
+				order: 0;
+				width: 100%;
+
+				margin-bottom: 30px;
+
+				h2 {
+					display: none;
+				}
+			}
+
+			.text {
+				order: 1;
+				width: 100%;
+
+				h1 {
+					font-size: 30px;
+					margin-bottom: 10px;
+				}
+
+				h3 {
+					font-size: 20px;
+				}
+
+				h1,
+				h3 {
+					width: 85%;
+				}
+			}
+		}
+
+		.highlights {
+			flex-direction: column;
+			.highlight {
+				width: 100%;
+				margin: 15% 0;
+				height: 300px;
+			}
+		}
+	}
+}

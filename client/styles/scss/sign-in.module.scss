@@ -1,0 +1,190 @@
+@import "variables";
+
+.loginContainer {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+
+	.images {
+		width: 50vw;
+		overflow: hidden;
+		background: $grey;
+		@include flex-center();
+		img {
+			width: 85%;
+			object-fit: cover;
+		}
+	}
+	.loginTxt {
+		width: 50vw;
+		overflow: hidden;
+		flex-direction: column;
+
+		.copyright {
+			font-size: 10px;
+			margin-top: 30px;
+			opacity: 0.5;
+		}
+
+		@include flex-center();
+		h1,
+		h5 {
+			width: 310px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h5 {
+			opacity: 0.5;
+		}
+		.logoImg {
+			width: 100px;
+			margin-bottom: 20px;
+		}
+
+		.signInSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			.emailSignIn {
+				width: 200px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				p {
+					opacity: 0.5;
+					font-size: 15px;
+					text-align: center;
+				}
+
+				.underline {
+					text-decoration: underline;
+					cursor: pointer;
+				}
+
+				form {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-evenly;
+					position: relative;
+					margin: 10px 0 20px 0;
+					div {
+						position: relative;
+
+						$input-font-size: 15px;
+
+						input {
+							border: none;
+							outline: none;
+							background: $grey;
+							width: 300px;
+							margin: 5px 0;
+							height: 30px;
+							padding: 25px;
+							border-radius: $border-radius;
+							font-size: $input-font-size;
+						}
+
+						img {
+							width: 25px;
+							height: 25px;
+							bottom: 19px;
+							right: 15px;
+							position: absolute;
+							cursor: pointer;
+						}
+
+						.errorInput {
+							border: red 1.5px solid;
+							animation: shake .25s;
+						}
+
+						@keyframes shake {
+							0% {
+								transform: translateX(0);
+							}
+							15% {
+								transform: translateX(20px);
+							}
+							30% {
+								transform: translateX(0);
+							}
+							45% {
+								transform: translateX(-20px);
+							}
+							60% {
+								transform: translateX(0);
+							}
+							75% {
+								transform: translateX(10px);
+							}
+							90% {
+								transform: translateX(0);
+							}
+							100% {
+								transform: translateX(-10px);
+							}
+						}
+
+						.label {
+							position: absolute;
+							left: 25px;
+							transition: all 0.2s;
+							font-weight: 300;
+							top: 18px;
+							font-size: $input-font-size;
+							pointer-events: none;
+						}
+
+						.labelHover {
+							font-size: 10px;
+							top: 10px;
+						}
+					}
+
+					.loginError {
+						text-align: center;
+						width: 100%;
+						font-size: 14px;
+						justify-content: center;
+					}
+
+					.submitEmailForm {
+						background: linear-gradient(to right, $red-primary-color, $red-light-color);
+						height: 40px;
+						width: 200px;
+						border-radius: $border-radius;
+						@include flex-center();
+						color: white;
+						margin-top: 10px;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.switchToSignUp {
+				font-size: 15px;
+				.signUpBtn {
+					color: $red-primary-color;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.images {
+			display: none;
+		}
+		.loginTxt {
+			width: 100vw;
+		}
+	}
+}

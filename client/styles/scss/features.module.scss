@@ -1,0 +1,58 @@
+@import "variables";
+
+.featuresSection {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	// padding: 20px;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.vidSection {
+		width: max(320px, 100vw);
+		margin: 10px 0;
+		display: flex;
+		flex-wrap: wrap;
+
+		.vid {
+			width: 50%;
+			margin-left: 5%;
+		}
+		h4 {
+			width: 45%;
+			font-size: 35px;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 50px;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+		}
+
+		@media screen and (max-width: 420px) {
+			flex-direction: column;
+			padding-bottom: 10px;
+
+			.vid {
+				width: 100%;
+				order: 2;
+				margin: 0;
+			}
+
+			h4 {
+				width: 100%;
+				font-size: 25px;
+				align-items: flex-start;
+				justify-content: flex-start;
+				padding: 10px;
+				order: 1;
+				// text-align: center;
+			}
+		}
+	}
+
+	.vidSection:nth-child(odd) {
+		background: $grey;
+	}
+}

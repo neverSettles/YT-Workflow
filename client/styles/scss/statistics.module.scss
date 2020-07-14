@@ -1,0 +1,99 @@
+@import "variables";
+
+.statisticsContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	.dashboardMenuContainer {
+		width: 350px;
+		height: 100%;
+		@media screen and (max-width: 420px) {
+			width: 0;
+		}
+	}
+
+	.statisticsSection {
+		width: calc(100vw - 350px);
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: center;
+		margin-bottom: 20px;
+
+		overflow-x: hidden;
+
+		h1 {
+			width: 100%;
+			text-align: center;
+			position: sticky;
+			background: $grey;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 30px;
+		}
+
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+			border-radius: $border-radius;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: rgb(202, 202, 202);
+			border-radius: $border-radius;
+			transition: 0.2s all;
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background: #acacac;
+		}
+
+		.chart {
+			width: 700px;
+			padding: 10px 0;
+		}
+
+		.lineChart {
+			width: 60%;
+		}
+
+		@media screen and (max-width: 770px) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+
+			.chart,
+			.lineChart {
+				width: 340px;
+				height: 340px;
+			}
+		}
+		@media screen and (max-width: 420px) {
+			width: 100%;
+			h1 {
+				padding-left: 20px;
+			}
+			.topChart {
+				margin-top: 220px;
+			}
+		}
+		@media screen and (max-width: 360px) {
+			.topChart {
+				margin-top: 420px;
+			}
+		}
+		@media screen and (max-width: 350px) {
+			.topChart {
+				margin-top: 450px;
+			}
+			h1 {
+				font-size: 25px;
+			}
+		}
+	}
+}

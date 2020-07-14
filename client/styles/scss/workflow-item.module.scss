@@ -1,0 +1,84 @@
+@import "variables";
+
+.workflowFinished {
+	opacity: 0.5;
+}
+
+.important {
+	border: 2px $red-primary-color solid;
+}
+
+.workflowContainer {
+	margin: 20px;
+	width: 200px;
+	height: 250px;
+	background: $grey;
+	border-radius: $slight-border-radius;
+	padding: 20px;
+	transition: all 0.5s;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: black;
+
+	.workflowTitle {
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.workflowKeywords {
+		height: 110px;
+		overflow: hidden;
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.workflowUsers {
+		width: 100%;
+		img {
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+		}
+	}
+
+	.workflowExtraInfo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: darken($grey, 20);
+
+		.workflowCreated {
+			font-size: 15px;
+		}
+
+		.workflowStatusIcons {
+			width: 50px;
+			justify-content: space-evenly;
+			display: flex;
+			transform: translateX(10px);
+
+			.grip {
+				cursor: grab;
+
+				&:active {
+					cursor: grabbing;
+				}
+			}
+
+			.starred {
+				color: gold;
+			}
+
+			.finished {
+				color: green;
+			}
+		}
+	}
+}
+
+.draggable {
+	transform: scale(1.1);
+}

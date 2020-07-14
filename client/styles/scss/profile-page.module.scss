@@ -1,0 +1,12 @@
+@import "variables";
+
+.profileContainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	.dashboardMenuContainer {
+		width: 350px;
+		height: 100%;
+	}
+}

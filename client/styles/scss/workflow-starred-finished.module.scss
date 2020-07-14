@@ -1,0 +1,21 @@
+@import "variables";
+
+.regular {
+	color: lighten(#000, 80);
+	cursor: pointer;
+	padding: 5px;
+	box-sizing: content-box;
+
+	&:active {
+		background: lighten(grey, 40);
+		border-radius: 100%;
+	}
+}
+
+.starred {
+	color: gold;
+}
+
+.finished {
+	color: green;
+}
