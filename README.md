@@ -4,7 +4,7 @@
 </p>
 <h2>Features</h2>
 <div style="height:400px; display: block;">
-    <img src="Video-Overview/add-files-to-your-workflow.gif" align="left" width="500"/>
+    <img src="Video-Overview/add-files-to-your-workflow.gif" width="500"/>
     <h3>Upload Files</h3>
     <p>
     Add video files and images in any of the categories: Thumbnails, Images, or Videos. These will be stored in the cloud and can be accessed from anywhere.
@@ -12,15 +12,15 @@
 </div>
 
 <div style="height:400px;">
+    <img src="Video-Overview/add-meaningful-titles.gif" width="500" />
     <h3>Title Workflows</h3>  
     <p>
         Give your workflows meaningful titles and organize your projects.
     </p>
-    <img src="Video-Overview/add-meaningful-titles.gif" align="right" width="500" />
 </div>
 
 <div style="height:400px;" >
-<img src="Video-Overview/share-your-work-with-others.gif" align="left" width="500"/>
+<img src="Video-Overview/share-your-work-with-others.gif" width="500"/>
 <h3>Share with others</h3>
 <p>
     Give others access to your workflow by sharing it with them, allowing them to edit certain videos and speed up the creative process. They will also be able to upload their own videos, updating the workflow in real time.
@@ -28,8 +28,35 @@
 </div>
 
 <div>
-<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" />
-<h3></h3>
-</div>
-<img src="Video-Overview/gain-valuable-insights.gif"  />
 <img src="Video-Overview/mark-whether-your-workflow-is-starred-and-finished.gif" />
+<h3>Mark Workflows Important and Finished</h3>
+<p>
+    Update whether or not the workflows have been finished or are more important than others. This can notify you and your peers about whether or not they should spend more time on one project or begin working on another one. 
+</p>
+</div>
+
+<div>
+<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" />
+<h3>View Shared Workflows</h3>
+<p>
+   Work on workflows that have been shared with you by other people. Upload new images, videos, and text descriptions to help finish projects and in a streamlined manner.
+</p>
+</div>
+
+<div>
+<img src="Video-Overview/gain-valuable-insights.gif"  />
+<h3>Gain Valuable Insights</h3>
+<p>
+    Visualize patterns in your workflows by analyzing bar graphs, pie charts, and polar area charts. Some of the insights include the number of words in video descriptions, breakdown of media files used, and much more.
+</p>
+</div>
+
+<h2>Programming Details</h2>
+<h3>Frontend</h3>
+<p>
+    The frontend was developed in JavaScript using the NextJs, a React framework. Moreover, the design and styling of the website was done using the modular version of Sass, a inheritance and function-based form of CSS. This allowed certain styles to impact only one aspect of a webpage, which makes its easy to manage.
+</p>
+<h3>Backend</h3>
+<p>
+    The backend was developed in Python using the Django library. The Django apps were responsible for recording any instances where users share a workflow, storing media files, creating user accounts, and creating workflows. A new Account model overrode the default User model to ensure the unique key identifier was the email of the user and to include information about the user's profile image. A SQLite3 database was used to store all the information and handle updating or deleting data.
+</p>
