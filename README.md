@@ -81,5 +81,5 @@
 
 <h2>Run the Code</h2>
 <p>
-    Run npm init in the client folder in a command line and pipenv install in the django_backend folder in its own command. Then run "npm run dev" in the client command line to start a server to host the NextJs frontend. Run "pipenv shell" in the backend command line, then run "python manage.py runserver" to start a server to host the Django backend.
+    Run "npm init" in the client folder in a command line and "pipenv install" in the django_backend folder in its own command line. Then run "npm run dev" in the client command line to start a server to host the NextJs frontend. Run "pipenv shell" in the backend command line, then run "python manage.py runserver" to start a server to host the Django backend.
 </p>
