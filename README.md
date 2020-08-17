@@ -5,68 +5,68 @@
 <h2>Features</h2>
 
 <div style="height:400px; display: block;">
-    <img src="Video-Overview/create-workflow.gif" width="500"/>
     <h3>Create Workflow</h3>
     <p>
         Start a new project easily and begin storing video files, image, and text descriptions at the click of a button.
     </p>
+    <img src="Video-Overview/create-workflow.gif" width="500"/>
 </div>
 
 <div style="height:400px; display: block;">
-    <img src="Video-Overview/add-files-to-your-workflow.gif" width="500"/>
     <h3>Upload Files</h3>
     <p>
     Add video files and images in any of the categories: Thumbnails, Images, or Videos. These will be stored in the cloud and can be accessed from anywhere.
     </p>
+    <img src="Video-Overview/add-files-to-your-workflow.gif" width="500"/>
 </div>
 
 <div style="height:400px;">
-    <img src="Video-Overview/add-meaningful-titles.gif" width="500" />
     <h3>Title Workflows</h3>  
     <p>
         Give your workflows meaningful titles and organize your projects.
     </p>
+    <img src="Video-Overview/add-meaningful-titles.gif" width="500" />
 </div>
 
 <div style="height:400px;" >
-<img src="Video-Overview/share-your-work-with-others.gif" width="500"/>
 <h3>Share with others</h3>
 <p>
     Give others access to your workflow by sharing it with them, allowing them to edit certain videos and speed up the creative process. They will also be able to upload their own videos, updating the workflow in real time.
 </p>
+<img src="Video-Overview/share-your-work-with-others.gif" width="500"/>
 </div>
 
 <div>
-<img src="Video-Overview/mark-whether-your-workflow-is-starred-and-finished.gif" width="500" />
 <h3>Mark Workflows Important and Finished</h3>
 <p>
     Update whether or not the workflows have been finished or are more important than others. This can notify you and your peers about whether or not they should spend more time on one project or begin working on another one. 
 </p>
+<img src="Video-Overview/mark-whether-your-workflow-is-starred-and-finished.gif" width="500" />
 </div>
 
 <div>
-<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" width="500" />
 <h3>View Shared Workflows</h3>
 <p>
    Work on workflows that have been shared with you by other people. Upload new images, videos, and text descriptions to help finish projects and in a streamlined manner.
 </p>
+<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" width="500" />
 </div>
 
 <div>
-<img src="Video-Overview/gain-valuable-insights.gif" width="500"/>
 <h3>Gain Valuable Insights</h3>
 <p>
     Visualize patterns in your workflows by analyzing bar graphs, pie charts, and polar area charts. Some of the insights include the number of words in video descriptions, breakdown of media files used, and much more.
 </p>
+<img src="Video-Overview/gain-valuable-insights.gif" width="500"/>
 </div>
 
 
 <div>
-<img src="Video-Overview/filter.gif" width="500"/>
 <h3>Filter Workflows</h3>
 <p>
     Filter workflows by whether or not they have been starred or finished. This makes it easy to navigate your workflows and see which projects are in progress and which are important.
 </p>
+<img src="Video-Overview/filter.gif" width="500"/>
 </div>
 
 <h2>Programming Details</h2>
