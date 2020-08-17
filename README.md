@@ -28,7 +28,7 @@
 </div>
 
 <div>
-<img src="Video-Overview/mark-whether-your-workflow-is-starred-and-finished.gif" />
+<img src="Video-Overview/mark-whether-your-workflow-is-starred-and-finished.gif" width="500" />
 <h3>Mark Workflows Important and Finished</h3>
 <p>
     Update whether or not the workflows have been finished or are more important than others. This can notify you and your peers about whether or not they should spend more time on one project or begin working on another one. 
@@ -36,7 +36,7 @@
 </div>
 
 <div>
-<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" />
+<img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" width="500" />
 <h3>View Shared Workflows</h3>
 <p>
    Work on workflows that have been shared with you by other people. Upload new images, videos, and text descriptions to help finish projects and in a streamlined manner.
@@ -44,7 +44,7 @@
 </div>
 
 <div>
-<img src="Video-Overview/gain-valuable-insights.gif"  />
+<img src="Video-Overview/gain-valuable-insights.gif" width="500"/>
 <h3>Gain Valuable Insights</h3>
 <p>
     Visualize patterns in your workflows by analyzing bar graphs, pie charts, and polar area charts. Some of the insights include the number of words in video descriptions, breakdown of media files used, and much more.
