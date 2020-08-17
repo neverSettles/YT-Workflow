@@ -3,7 +3,7 @@
     YouTube is the worldest biggest video platform service. However, when making a video, there are many steps to consider before publishing. These include creating an interesting thumbnail, storing videos, writing an intriguing video description, and sometimes even collaborating with others to speed up the video-editing process. YT Workflow is a web application aimed at helping solve these solutions. It is a cloud service that stores videos, images, and text quickly while also allowing users to share their workflows with others. It organizes the entire process by ensuring all contributors to a video can see all media files for a given project at once in real time.
 </p>
 <h2>Features</h2>
-<div>
+<div style="height:400px;">
     <img src="Video-Overview/add-files-to-your-workflow.gif" align="left" width="500"/>
     <h3>Upload Files</h2>
     <p>
@@ -11,7 +11,7 @@
     </p>
 </div>
 
-<div>
+<div style="height:400px;">
     <img src="Video-Overview/add-meaningful-titles.gif" align="left" width="500" />
     <h3>Title Workflows</h3>  
     <p>
@@ -19,7 +19,7 @@
     </p>
 </div>
 
-<div>
+<div style="height:400px;" >
 <img src="Video-Overview/share-your-work-with-others.gif" align="left" width="500"/>
 <h3>Share with others</h3>
 <p>
