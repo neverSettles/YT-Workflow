@@ -5,15 +5,15 @@
 <h2>Features</h2>
 <div style="height:400px;">
     <img src="Video-Overview/add-files-to-your-workflow.gif" align="left" width="500"/>
-    <h3>Upload Files</h3>
-    <p>
+    <h3 align="right">Upload Files</h3>
+    <p align="right">
     Add video files and images in any of the categories: Thumbnails, Images, or Videos. These will be stored in the cloud and can be accessed from anywhere.
     </p>
 </div>
 
 <div style="height:400px;">
-    <h3>Title Workflows</h3>  
-    <p>
+    <h3 align="left">Title Workflows</h3>  
+    <p align="left">
         Give your workflows meaningful titles and organize your projects.
     </p>
     <img src="Video-Overview/add-meaningful-titles.gif" align="right" width="500" />
@@ -21,8 +21,8 @@
 
 <div style="height:400px;" >
 <img src="Video-Overview/share-your-work-with-others.gif" align="left" width="500"/>
-<h3>Share with others</h3>
-<p>
+<h3 align="right">Share with others</h3>
+<p align="right">
     Give others access to your workflow by sharing it with them, allowing them to edit certain videos and speed up the creative process. They will also be able to upload their own videos, updating the workflow in real time.
 </p>
 </div>
