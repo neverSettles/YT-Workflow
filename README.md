@@ -16,7 +16,7 @@
     <p>
         Give your workflows meaningful titles and organize your projects.
     </p>
-    <img src="Video-Overview/add-meaningful-titles.gif" align="left" width="500" />
+    <img src="Video-Overview/add-meaningful-titles.gif" align="right" width="500" />
 </div>
 
 <div style="height:400px;" >
