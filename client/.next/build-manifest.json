@@ -20,11 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/dashboard/workflows": [
+    "/login": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/login": [
+    "/workflow/[id]": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

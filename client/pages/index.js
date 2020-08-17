@@ -9,7 +9,7 @@ const Index = () => {
 	const jwtToken = useSelector((state) => state.jwtToken);
 
 	if (jwtToken !== '') {
-		Router.push('/dashboard/home');
+		window.location = '/dashboard/workflows';
 	}
 
 	return (
