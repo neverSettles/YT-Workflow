@@ -12,11 +12,11 @@
 </div>
 
 <div style="height:400px;">
-    <img src="Video-Overview/add-meaningful-titles.gif" align="left" width="500" />
     <h3>Title Workflows</h3>  
     <p>
         Give your workflows meaningful titles and organize your projects.
     </p>
+    <img src="Video-Overview/add-meaningful-titles.gif" align="left" width="500" />
 </div>
 
 <div style="height:400px;" >
