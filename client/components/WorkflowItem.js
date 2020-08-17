@@ -32,9 +32,7 @@ const WorkflowItem = ({ workflow, id }) => {
 				)}
 			</h4>
 			<div>
-				<div className={styles.workflowUsers}>
-					<img src={profileImage} />
-				</div>
+				<div className={styles.workflowUsers}>{/* <img src={profileImage} /> */}</div>
 				<div className={styles.workflowExtraInfo}>
 					<h3 className={styles.workflowCreated}>{workflow.created_at.slice(0, 10)}</h3>
 					<div className={styles.workflowStatusIcons}>
