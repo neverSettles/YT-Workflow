@@ -5,7 +5,7 @@
 <h2>Features</h2>
 <div style="height:400px;">
     <img src="Video-Overview/add-files-to-your-workflow.gif" align="left" width="500"/>
-    <h3>Upload Files</h2>
+    <h3>Upload Files</h3>
     <p>
     Add video files and images in any of the categories: Thumbnails, Images, or Videos. These will be stored in the cloud and can be accessed from anywhere.
     </p>
