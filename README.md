@@ -78,3 +78,8 @@
 <p>
     The backend was developed in Python using the Django library. The Django apps were responsible for recording any instances where users share a workflow, storing media files, creating user accounts, and creating workflows. A new Account model overrode the default User model to ensure the unique key identifier was the email of the user and to include information about the user's profile image. A SQLite3 database was used to store all the information and handle updating or deleting data.
 </p>
+
+<h2>Run the Code</h2>
+<p>
+    Run npm init in the client folder in a command line and pipenv install in the django_backend folder in its own command. Then run "npm run dev" in the client command line to start a server to host the NextJs frontend. Run "pipenv shell" in the backend command line, then run "python manage.py runserver" to start a server to host the Django backend.
+</p>
