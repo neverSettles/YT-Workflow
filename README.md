@@ -18,14 +18,15 @@
         Give your workflows meaningful titles and organize your projects.
     </p>
 </div>
-</div>
 
+<div>
 <img src="Video-Overview/share-your-work-with-others.gif" align="left" width="500"/>
 <h3>Share with others</h3>
 <p>
     Give others access to your workflow by sharing it with them, allowing them to edit certain videos and speed up the creative process. They will also be able to upload their own videos, updating the workflow in real time.
 </p>
 </div>
+
 <div>
 <img src="Video-Overview/check-out-the-workflows-shared-with-you.gif" />
 <h3></h3>
